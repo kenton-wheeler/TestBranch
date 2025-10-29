@@ -1,6 +1,5 @@
-height = int(input("Enter the height of the rectangle: "))
-width = int(input("Enter the width of the rectangle: "))
-for row in range(height):
-    for column in range(width):
-        print('*',end="")
+size = int(input("Enter the size of the triangle: "))
+for row in range(1,size+1):
+    for column in range(row):
+        print('#',end="")
     print()

@@ -1,9 +1,9 @@
+vowels = ['A','E','I','O','U']
 word = input("Please enter a word: ").upper()
 number_of_vowels = 0
 number_of_consonants = 0
-for position in range(len(word)):
-    letter = word[position]
-    if letter in ('A','E','I','O','U'):
+for letter in word:
+    if letter in vowels:
         number_of_vowels += 1
     else:
         number_of_consonants += 1
