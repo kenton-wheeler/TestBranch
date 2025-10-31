@@ -1,16 +1,16 @@
-# Function to calculate the total of three numbers
-def calc_total(number1, number2, number3):
-    total = number1 + number2 + number3
-    return total
+def vowels_and_consonants(word):
+    vowels = ['A','E','I','O','U']
+    number_of_vowels = 0
+    number_of_consonants = 0
+    for letter in word:
+        if letter in vowels:
+            number_of_vowels += 1
+        else:
+            number_of_consonants += 1
+    print(f"Number of vowels in the word: {number_of_vowels}")
+    print(f"Number of consonants in the word: {number_of_consonants}")
 
-# Main program
-# Prompt user to enter three numbers
-num1 = float(input("Enter the first number: "))
-num2 = float(input("Enter the second number: "))
-num3 = float(input("Enter the third number: "))
-
-# Call the calc_total function
-total = calc_total(num1, num2, num3)
-
-# Display the total
-print(f"The total is: {total}")
+word = input("Please enter a word: ").upper()
+while word != 'END':
+    vowels_and_consonants(word)
+    word = input("Please enter a word: ").upper()
