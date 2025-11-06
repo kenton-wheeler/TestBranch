@@ -3,9 +3,9 @@ def calc_total(number1, number2, number3):
     total = number1 + number2 + number3
     return total
 
-# Function to calculate the average of three numbers
-def calc_avg(number1, number2, number3):
-    avg = (number1 + number2 + number3)/3
+# Function to calculate the average of some numbers
+def calc_avg(sum, num_of_numbers):
+    avg = sum / num_of_numbers
     return avg
 
 # Function to sort three numbers into numerical order
@@ -27,7 +27,7 @@ total = calc_total(num1, num2, num3)
 print(f"The total is: {total}")
 
 # Call the calc_avg function
-average = calc_avg(num1, num2, num3)
+average = calc_avg(total,3)
 
 # Display the average
 print(f"The average is: {average:.2f}")

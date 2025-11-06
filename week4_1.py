@@ -10,6 +10,7 @@ def vowels_and_consonants(word):
     print(f"Number of vowels in the word: {number_of_vowels}")
     print(f"Number of consonants in the word: {number_of_consonants}")
 
+# Main program
 word = input("Please enter a word: ").upper()
 while word != 'END':
     vowels_and_consonants(word)

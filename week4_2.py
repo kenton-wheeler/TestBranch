@@ -13,4 +13,4 @@ num3 = float(input("Enter the third number: "))
 total = calc_total(num1, num2, num3)
 
 # Display the total
-print(f"The total is: {total}")
+print(f"The total is: £{total:.2f}")
