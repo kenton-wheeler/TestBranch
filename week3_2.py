@@ -1,2 +1,2 @@
-for num in range(50,-1,-10):
+for num in range(1,-1,-10):
     print(num)

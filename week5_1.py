@@ -6,4 +6,4 @@ while car_input != 'End':
         print (f"{car_input} is in index position {position} in the list")
     else:
         print (f"{car_input} is not in the list")
-    car_input = input("Enter a make of car (enter End to exit program): ")
+    car_input = input("Enter a make of car (enter End to exit program): ").

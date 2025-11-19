@@ -9,7 +9,7 @@ user_number = int(input("Enter the next number (0 to exit) "))
 numbers_list = []
 while user_number != 0:
     numbers_list.append(user_number)
-    user_number = int(input("Enter the next number (0 to exit) "))
+    user_number = input("Enter the next number (0 to exit) ")
 
 summary = summarise_numbers(numbers_list)
 print(f"The total of the numbers is {summary[0]}")

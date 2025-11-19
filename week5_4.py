@@ -9,15 +9,15 @@ for car in german_cars:
 japanese_cars = [('Honda',9200),('Lexus',2665),('Mazda',3450),('Suzuki',2885),('Toyota',10330)]
 all_cars = sorted(german_cars + japanese_cars)
 
-for car in all_cars:
-    print(f"{car[0]} sold {car[1]} vehicles this year")
+for brand, sales in all_cars:
+    print(f"{brand} sold {sales} vehicles this year")
 
 total_german_cars_sold = 0
 total_japanese_cars_sold = 0
-for car in german_cars:
-    total_german_cars_sold += car[1]
-for car in japanese_cars:
-    total_japanese_cars_sold += car[1]
+for brand, sales in german_cars:
+    total_german_cars_sold += sales
+for brand, sales in japanese_cars:
+    total_japanese_cars_sold += sales
 if total_german_cars_sold > total_japanese_cars_sold:
     print("More german cars were sold than japanese cars this year")
 else:

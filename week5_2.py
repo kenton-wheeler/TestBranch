@@ -1,9 +1,13 @@
-def menu():
-    print("1. Add a fruit to the list")
-    print("2. Remove a fruit from the list")
-    print("3. Print the list")
-    print("9. Exit")
-    menu_option = int(input("Enter a menu option: "))
+def display_menu():
+    try:
+        print("1. Add a fruit to the list")
+        print("2. Remove a fruit from the list")
+        print("3. Print the list")
+        print("9. Exit")
+        menu_option = int(input("Enter a menu option: "))
+    except ValueError:
+        print("You must enter a number")
+        display_menu()
     return menu_option
 
 def option1():
@@ -23,7 +27,7 @@ def option2():
 fruits = ['apple', 'banana', 'lemon', 'orange']
 
 while True:
-    option_selected = menu()
+    option_selected = display_menu()
     if option_selected == 1:
         option1()
     elif option_selected == 2:
