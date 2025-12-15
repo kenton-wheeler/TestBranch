@@ -17,7 +17,7 @@ def show_phones_by_brand(phones_data, brands_list):
     while True:
         user_brand = input("Enter a phone brand: ")
         if user_brand in brands_list:
-            print(f"Model                Storage    RAM    Price")
+            print(f"{'Model':20} {'Storage':10} {'RAM':10} {'Price':10}")
             for row in phones_data:
                 if row[0] == user_brand:
                    print(f"{row[1]:20} {row[2]:10} {row[3]:10} {row[5]:10}")
