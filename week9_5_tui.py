@@ -5,7 +5,7 @@ def main_menu():
     while True:
         try:
             choice = int(input("Enter menu choice: "))
-            if choice not in (1,2,3,4):
+            if choice not in (1,2,3):
                 print("Invalid choice, please re-enter")
             else:
                 break
